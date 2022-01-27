@@ -89,7 +89,7 @@ function draw() {
   if(gameState === "start"){
     title.visible = true;
 
-    if(keyIsDown(32) || touches.lenght > 0){
+    if(keyIsDown(32) || controls.jmp > 0){
       gameState = "play";
     }
 
@@ -155,7 +155,7 @@ function draw() {
       submitted = true;
     }
 
-    if(keyIsDown(32) && spaceReleased == true && submitted == true || touches.lenght > 5 && submitted == true){
+    if(keyIsDown(32) && spaceReleased == true && submitted == true || controls.jmp > 0 && submitted == true){
       player.reset();
       fallSpeed = width/200;
       appearSpeed = 50;
