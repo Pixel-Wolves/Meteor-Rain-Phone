@@ -281,3 +281,16 @@ function writeScore(){
 function showError(){
 
 }
+
+function touched(obj,radius){
+  if(touches.lenght > 0 
+    && touches.x > obj.x - radius
+    && touches.x < obj.x + radius
+    && touches.x > obj.y - radius
+    && touches.x < obj.y + radius){
+      return true;
+  }
+  else{
+    return false;
+  }
+}

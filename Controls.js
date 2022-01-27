@@ -28,24 +28,24 @@ class Controls{
     display(){
 
 
-        if(mousePressedOver(this.leftButton)){
+        if(touched(this.leftButton)){
             this.x=-1;
         }
-        else if (mousePressedOver(this.rightButton)){
+        else if (touched(this.rightButton)){
             this.x=1;
         }
         else{
             this.x=0;
         }
 
-        if(mousePressedOver(this.jumpButton)){
+        if(touched(this.jumpButton)){
             this.jmp=1;
         }
         else{
             this.jmp=0;
         }
 
-        if(mousePressedOver(this.blastButton)){
+        if(touched(this.blastButton)){
             this.blst=1;
         }
         else{
