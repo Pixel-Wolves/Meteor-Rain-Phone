@@ -187,8 +187,10 @@ class Player{
         // Gravity & Friction
         this.sprite.velocityY += this.gravity;
         this.sprite.velocityX = this.sprite.velocityX * 0.95;
-    }
 
+        console.log(this.isGrounded)
+    }
+    
     animation(){
         // Animations
         if(this.isGrounded == true){

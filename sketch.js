@@ -21,6 +21,7 @@ var bgImg;
 var initFS;
 var canvas;
 var controls;
+var x,y,z;
 
 function preload(){
   jumpSFX = loadSound("SFX/Jump.wav");
