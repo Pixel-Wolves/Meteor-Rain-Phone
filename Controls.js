@@ -9,12 +9,9 @@ class Controls{
 
     display(){
         window.addEventListener("deviceorientation",function(event) {
-            alpha = Math.round(event.alpha);
-            beta = Math.round(event.beta);
-            gamma = Math.round(event.gamma);
-            this.x=beta;
-            this.y=gamma;
-            this.z=alpha;
+            this.x=Math.round(event.beta);
+            this.y=Math.round(event.gamma);
+            this.z=Math.round(event.alpha);
         }, true);
 
         if(touches.lenght != 0){
